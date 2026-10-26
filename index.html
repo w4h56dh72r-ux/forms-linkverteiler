@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weiterleitung zur Umfrage</title>
+</head>
+<body>
+  <p>Du wirst zur Umfrage weitergeleitet ...</p>
+
+  <script>
+    const formulare = [
+      "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQl2yflUMEpIWEo0VkRTWEdSWDBVRTVXVEFUWlI3VS4u",
+      "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__QV6SvZUMjZYTFlLUDQ3MDA2NUM5TjhJT0dYWFdQSC4u",
+      "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQl2yflUM01PUERBQTFERTYxV05VNExNRDdVUVcyQi4u",
+      "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAYAAFRyEDhUNkZGVEFDQTRLUlBWQlg1TFgxUTZOTlJTTy4u"
+    ];
+
+    const zufall = Math.floor(Math.random() * formulare.length);
+
+    window.location.replace(formulare[zufall]);
+  </script>
+</body>
+</html>
